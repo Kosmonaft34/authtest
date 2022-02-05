@@ -1,7 +1,22 @@
-GET http://localhost:3000/signup
+
+POST http://localhost:3000/signup
 Content-Type: application/json
 
 {
-    name: "John",
-    
+    "name": "John",
+    "surname": "Smith",
+    "birthday": "2022-02-28",
+    "email": "testww1@@example.com",
+    "password": "test12345"
 }
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "testww1@example",
+    "password": "test12345"
+}
+
